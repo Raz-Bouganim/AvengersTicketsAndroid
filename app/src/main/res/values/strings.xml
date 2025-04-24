@@ -1,0 +1,68 @@
+<resources>
+    <!-- General strings -->
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="confirmation_message">Tickets booked successfully!</string>
+    <string name="not_selected">Not selected</string>
+
+    <!-- Movie details -->
+    <string name="app_name">Avengers: Endgame</string>
+    <string name="about_the_movie_header">About the Movie</string>
+    <string name="about_the_movie">After the devastating events of Infinity War, the remaining Avengers must unite once more to undo Thanos’ snap and restore balance to the universe. Through time travel, epic battles, and emotional sacrifices, the heroes face their greatest challenge yet in a final showdown that will determine the fate of all existence.</string>
+    <string name="cast_header">Cast</string>
+    <string name="movie_cast">Chris Evans, Robert Downey Jr., Scarlett Johansson, Mark Ruffalo, Chris Hemsworth, Benedict Cumberbatch, Tom Holland, and more.</string>
+    <string name="director_header">Director</string>
+    <string name="movie_director">Anthony and Joe Russo</string>
+
+    <!-- Booking Section -->
+    <string name="book_your_tickets">Book Your Tickets</string>
+    <string name="select_preferences">Select your preferences below</string>
+    <string name="adult_tickets">Adult Tickets</string>
+    <string name="adult_tickets_default">0</string>
+    <string name="child_tickets">Child Tickets</string>
+    <string name="child_tickets_default">0</string>
+    <string name="select_theater">Select Theater</string>
+    <string name="date_picker_header">Select Date</string>
+    <string name="date_picker_text">dd/mm/yyyy</string>
+    <string name="get_tickets">Get Tickets</string>
+
+    <!-- Price Details -->
+    <string name="adult_price_default">Adult Tickets: $0</string>
+    <string name="child_price_default">Child Tickets: $0</string>
+    <string name="total_price_default">Total Price: $0</string>
+    <string name="adult_total_tickets">Adult Tickets: $%1$d</string>
+    <string name="child_total_tickets">Child Tickets: $%1$d</string>
+    <string name="total_tickets_price">Total Tickets: $%1$d</string>
+    <string name="price">$0</string>
+
+    <!-- Dialog Strings -->
+    <string name="confirm_your_order">Confirm Your Order</string>
+    <string name="please_review_your_order">Please review your ticket selection</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="movie">Movie:</string>
+    <string name="date">Date:</string>
+    <string name="tickets">Tickets:</string>
+    <string name="ticket_count">Adult: %1$d, Child: %2$d</string>
+    <string name="theater">Theater:</string>
+    <string name="total_price_header">Total Price:</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+
+    <!-- Validation Messages -->
+    <string name="name_required">Name is required</string>
+    <string name="valid_email_required">Valid email is required</string>
+    <string name="invalid_ticket_count">Invalid ticket count</string>
+
+    <!-- Date Picker -->
+    <string name="date_picker_chose">%1$d/%2$d/%3$d</string>
+
+    <!-- Theater Options -->
+    <string-array name="theater_options">
+        <item>Choose a theater</item>
+        <item>Cinema City</item>
+        <item>Hot Cinema</item>
+        <item>Yes Planet</item>
+    </string-array>
+</resources>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" >
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <!-- Image Slider -->
+                <ViewFlipper
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoStart="true"
+                    android:flipInterval="4500" />
+
+                <!-- Gradient Overlay -->
+                <View
+                    android:id="@+id/imagesGradientOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_overlay" />
+
+                <!-- Movie Title -->
+                <TextView
+                    android:id="@+id/movieTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Movie Summary -->
+            <TextView
+                android:id="@+id/aboutTheMovieHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_the_movie_header"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:id="@+id/aboutTheMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_the_movie"
+                android:textSize="15sp"
+                android:textColor="#C8C8C8"
+                android:paddingBottom="16dp" />
+
+            <!-- Movie Cast -->
+            <TextView
+                android:id="@+id/castHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cast_header"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:id="@+id/cast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_cast"
+                android:textSize="15sp"
+                android:textColor="#C8C8C8"
+                android:paddingBottom="16dp" />
+
+            <!-- Movie Director -->
+            <TextView
+                android:id="@+id/directorHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/director_header"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingBottom="8dp" />
+            <TextView
+                android:id="@+id/director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_director"
+                android:textSize="15sp"
+                android:textColor="#C8C8C8"
+                android:paddingBottom="16dp" />
+
+            <!-- Order block -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/order_tickets_rounded_form" >
+
+                <!-- Book Your Tickets Header -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_your_tickets"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_preferences"
+                    android:textSize="16sp"
+                    android:textColor="#C8C8C8"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Amount of adult tickets -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#C8C8C8"
+                    android:text="@string/adult_tickets" />
+                <EditText
+                    android:id="@+id/adultTicketsCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:hint="@string/adult_tickets_default"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Amount of child tickets -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#C8C8C8"
+                    android:text="@string/child_tickets" />
+                <EditText
+                    android:id="@+id/childTicketsCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:hint="@string/child_tickets_default"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Select Theater -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#C8C8C8"
+                    android:text="@string/select_theater" />
+                <Spinner
+                    android:id="@+id/theaterSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#C8C8C8"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Date Picker -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#C8C8C8"
+                    android:text="@string/date_picker_header" />
+                <TextView
+                    android:id="@+id/datePickerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/date_picker_text"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="#C8C8C8"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:clickable="true" />
+
+                <!-- Price Breakdown -->
+                <TextView
+                    android:id="@+id/adultPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adult_price_default"
+                    android:textSize="16sp"
+                    android:textColor="#C8C8C8"
+                    android:layout_marginBottom="8dp" />
+                <TextView
+                    android:id="@+id/childPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/child_price_default"
+                    android:textSize="16sp"
+                    android:textColor="#C8C8C8"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Total Price -->
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price_default"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Book Now Button -->
+                <Button
+                    android:id="@+id/getTicketsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_tickets"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#FF69B4"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<resources>
+    <!-- General Strings -->
+    <string name="fill_all_fields">אנא מלא את כל השדות</string>
+    <string name="confirmation_message">הכרטיסים נרכשו בהצלחה!</string>
+    <string name="not_selected">לא נבחר</string>
+
+    <!-- Movie Details -->
+    <string name="app_name">הנוקמים: סוף המשחק</string>
+    <string name="about_the_movie_header">תקציר הסרט</string>
+    <string name="about_the_movie">לאחר שתאנוס הצליח לאסוף את ששת אבני האינסוף, הוא כפה את רצונו המעוות על כלל החיים ובאופן רנדומלי מחק מחצית מאוכלוסיית היקום, ובכללם גם מספר לא מבוטל של נוקמים. לאחר החורבן העצום, הנוקמים הנותרים עומדים בפתחו של האתגר הגדול ביותר שניצבו בפניו: מציאת הכוחות הפנימיים כדי \'לקום מהספסל\' ולמצוא דרך להביס את תאנוס אחת ולתמיד</string>
+    <string name="cast_header">שחקנים</string>
+    <string name="movie_cast">כריס אוונס, רוברט דאוני ג\'וניור, סקרלט ג\'והנסון, מארק ראפאלו, כריס המסוורת\', בנדיקט קאמברבאץ\', תום הולנד ועוד..</string>
+    <string name="director_header">במאי</string>
+    <string name="movie_director">אנתוני וג\'ו רוסו</string>
+
+    <!-- Booking Section -->
+    <string name="book_your_tickets">הזמן כרטיסים</string>
+    <string name="select_preferences">בחר את העדפותיך</string>
+    <string name="adult_tickets">כרטיס מבוגר</string>
+    <string name="adult_tickets_default">0</string>
+    <string name="child_tickets">כרטיס ילד</string>
+    <string name="child_tickets_default">0</string>
+    <string name="select_theater">בחר קולנוע</string>
+    <string name="date_picker_header">בחר תאריך</string>
+    <string name="date_picker_text">dd/mm/yyyy</string>
+    <string name="get_tickets">קנה כרטיסים</string>
+
+    <!-- Price Details -->
+    <string name="adult_price_default">מבוגר: $0</string>
+    <string name="child_price_default">ילד: $0</string>
+    <string name="total_price_default">"סכום כולל: $0 "</string>
+    <string name="adult_total_tickets">כרטיס מבוגר: $%1$d</string>
+    <string name="child_total_tickets">כרטיס ילד: $%1$d</string>
+    <string name="total_tickets_price">סכום כולל: $%1$d</string>
+    <string name="price">$0</string>
+
+    <!-- Dialog Strings -->
+    <string name="confirm_your_order">אשר את הרכישה</string>
+    <string name="please_review_your_order">בבקשה עבור על הכרטיסים הנבחרים</string>
+    <string name="name">שם:</string>
+    <string name="email">מייל:</string>
+    <string name="movie">סרט:</string>
+    <string name="date">תאריך:</string>
+    <string name="tickets">כרטיסים:</string>
+    <string name="ticket_count">מבוגר: %1$d, ילד: %2$d</string>
+    <string name="theater">קולנוע:</string>
+    <string name="total_price_header">מחיר כולל:</string>
+    <string name="enter_your_name">שם</string>
+    <string name="enter_your_email">מייל</string>
+    <string name="cancel">ביטול</string>
+    <string name="confirm_purchase">אישור ורכישה</string>
+
+    <!-- Validation Messages -->
+    <string name="name_required">נדרש להכניס שם</string>
+    <string name="valid_email_required">נדרש להכניס מייל תקין</string>
+    <string name="invalid_ticket_count">מספר לא תקין של כרטיסים</string>
+
+    <!-- Date Picker -->
+    <string name="date_picker_chose">%1$d/%2$d/%3$d</string>
+
+    <!-- Theater Options -->
+    <string-array name="theater_options">
+        <item>בחר קולנוע</item>
+        <item>סינמה סיטי</item>
+        <item>הוט סינמה</item>
+        <item>יס פלאנט</item>
+    </string-array>
+</resources>
